@@ -39,8 +39,8 @@ export function Header({ onAddTask }: HeaderProps) {
     <header className="sticky top-0 z-50 w-full border-b border-[var(--card-border)] bg-[var(--bg-color)]/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="p-2 bg-[var(--accent)] rounded-lg text-[var(--bg-color)]">
-            <LayoutDashboard size={24} />
+          <div className="w-10 h-10 overflow-hidden rounded-lg shrink-0 border border-[var(--card-border)]">
+            <img src="/favicon.jpg" alt="FocusMatrix Logo" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </div>
           <h1 className="text-xl font-bold tracking-tight">FocusMatrix</h1>
         </div>
