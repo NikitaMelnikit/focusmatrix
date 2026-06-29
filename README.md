@@ -1,20 +1,83 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🎯 FocusMatrix
 
-# Run and deploy your AI Studio app
+> A high-performance productivity workspace combining the Pomodoro technique, Task Management, and the Eisenhower Decision Matrix.
 
-This contains everything you need to run your app locally.
+FocusMatrix is a beautifully crafted, local-first productivity web application designed to help you organize your tasks, prioritize effectively, and maintain deep focus. Inspired by the sleek aesthetics of financial terminals, it features a minimal, high-contrast UI with smooth layout animations.
 
-View your app in AI Studio: https://ai.studio/apps/bbfb21b0-d58f-4e5c-9d77-c4aa6f63b216
+![FocusMatrix Screenshot](./public/screenshot.png) *(You can add a screenshot here later)*
 
-## Run Locally
+## ✨ Features
 
-**Prerequisites:**  Node.js
+- **⏱️ Focus Mode (Pomodoro Timer)**: A precision countdown timer with a dynamic SVG progress ring to keep you in the zone. Includes standard 25-minute focus blocks and 5-minute short breaks.
+- **📋 Task Board**: A robust task management list with categorization tags (`Work`, `Trading`, `Coding`). Tasks are persisted locally, complete with smooth Framer Motion layout animations when adding, completing, or removing items.
+- **🔲 Decision Matrix (Eisenhower)**: Visually prioritize your workload using the Eisenhower Matrix. Click any quadrant to instantly add a task categorized to that specific priority level (Do First, Schedule, Delegate, Eliminate).
+- **🌗 Theme Toggle**: Built-in Dark/Light mode support. The default dark mode features a deep slate background (`#0f172a`) with vibrant teal (`#2dd4bf`) accents.
+- **💾 Local-First Persistence**: All tasks and theme preferences are automatically saved to your browser's local storage. Fast, reliable, and privacy-respecting (your data never leaves your device).
+- **📱 Fully Responsive**: A fluid 3-column desktop layout that elegantly collapses into a scrollable, unified view for mobile devices.
 
+## 🛠️ Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Framework**: [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://motion.dev/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+
+## 🚀 Getting Started
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/focusmatrix.git
+   cd focusmatrix
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173` (or the port specified in your terminal).
+
+## 🏗️ Project Structure
+
+```text
+src/
+├── components/          # UI components
+│   ├── AddTaskModal.tsx # Modal for task creation
+│   ├── DecisionMatrix.tsx # Eisenhower matrix grid
+│   ├── FocusMode.tsx    # Pomodoro timer logic and UI
+│   ├── Header.tsx       # Navigation and theme toggle
+│   └── TaskBoard.tsx    # Task list rendering
+├── hooks/               # Custom React hooks
+│   ├── useLocalStorage.ts # State persistence logic
+│   └── useTimer.ts      # Timer state management
+├── App.tsx              # Main application layout
+├── index.css            # Tailwind & CSS Variables (Theming)
+├── main.tsx             # Application entry point
+└── types.ts             # Global TypeScript definitions
+```
+
+## 🤝 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
