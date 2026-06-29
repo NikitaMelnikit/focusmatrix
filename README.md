@@ -4,7 +4,11 @@
 
 FocusMatrix is a beautifully crafted, local-first productivity web application designed to help you organize your tasks, prioritize effectively, and maintain deep focus. Inspired by the sleek aesthetics of financial terminals, it features a minimal, high-contrast UI with smooth layout animations.
 
-![FocusMatrix Screenshot](./public/screenshot.png) *(You can add a screenshot here later)*
+<img width="1903" height="869" alt="image" src="https://github.com/user-attachments/assets/f4961f6e-48b6-4e64-86d8-759f171dbfdb" />
+
+<img width="1902" height="867" alt="image" src="https://github.com/user-attachments/assets/16e5bb0e-0578-4064-a347-b6ed1ec22253" />
+
+
 
 ## ✨ Features
 
